@@ -1,0 +1,3 @@
+add_library(glfw3 STATIC IMPORTED)
+find_library(GLFW3_LIBRARY_PATH glm HINTS "${CMAKE_CURRENT_LIST_DIR}/../lib/")
+set_target_properties(glfw3 PROPERTIES IMPORTED_LOCATION "${GLFW3_LIBRARY_PATH}")
